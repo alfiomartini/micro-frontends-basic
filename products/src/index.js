@@ -8,4 +8,3 @@ for (let i = 0; i < 6; i++) {
 }
 
 document.querySelector("#dev-products").innerHTML = products;
-// console.log(products);
