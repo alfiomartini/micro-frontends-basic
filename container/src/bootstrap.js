@@ -1,3 +1,6 @@
-import "productsApp/ProductsIndex";
+import { mount } from "productsApp/ProductsIndex";
 import "cartApp/CartIndex";
-console.log("Container!");
+
+const prodElm = document.querySelector("#dev-products-container");
+mount(prodElm);
+console.log("Container mounted!");
