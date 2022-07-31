@@ -1,0 +1,9 @@
+const CONTAINER_DEV_PORT = 8080;
+const PRODUCTS_DEV_PORT = 8082;
+const CART_DEV_PORT = 8083;
+
+module.exports = {
+    CONTAINER_DEV_PORT,
+    PRODUCTS_DEV_PORT,
+    CART_DEV_PORT
+}

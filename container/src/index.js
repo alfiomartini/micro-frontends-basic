@@ -5,4 +5,4 @@ import("./bootstrap")
   .then(() => {
     console.log("Finished importing/evaluating bootstrap in 'container' ");
   })
-  .catch((error) => console.log(error.message));
+  .catch((error) => console.log('CONTAINER error message', error.message));
