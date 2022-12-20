@@ -16,7 +16,7 @@ it executes each '_bootstrap.js_', it has to fetch some essential _resources_, a
 exposed by the microfrontends _products_ and _carts_.
 
 These definitions are made with the help of webpack configuration files. For instance, here are the configuration files for the [container](container/webpack.config.js),
-and for the [products](products/webpack.config.js) and [cart](cart/webpack.config.js) microfrontends.
+and for the [products](products/webpack.config.js) and [cart](cart/webpack.config.js) microfrontends. You can find detailed explanations and lots of diagrams in the slides [here](slides/microfrontends-intro.pdf).
 
 ---
 
