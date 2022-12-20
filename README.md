@@ -16,7 +16,10 @@ it executes each '_bootstrap.js_', it has to fetch some essential _resources_, a
 exposed by the microfrontends _products_ and _carts_.
 
 These definitions are made with the help of webpack configuration files. For instance, here are the configuration files for the [container](container/webpack.config.js),
-and for the [products](products/webpack.config.js) and [cart](cart/webpack.config.js) microfrontends. You can find detailed explanations and lots of diagrams in the documentation slides [here](slides/microfrontends-intro.pdf).
+and for the [products](products/webpack.config.js) and [cart](cart/webpack.config.js) microfrontends. The file `src/bootstrap` of both
+\__products_ and _cart_ exports a _mount_ function, that receives an HTML element and
+uses it to insert the component in the DOM. These exposed mount functions are then imported and used by the container to render both microfrontends.
+You can find detailed explanations and lots of diagrams in the documentation slides [here](slides/microfrontends-intro.pdf).
 
 ---
 
