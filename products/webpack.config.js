@@ -9,7 +9,7 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "productsApp",
+      name: "products",
       filename: "remoteEntry.js",
       exposes: {
         "./ProductList": "./src/bootstrap",

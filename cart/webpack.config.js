@@ -9,7 +9,7 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "cartApp",
+      name: "cart",
       filename: "remoteEntry.js",
       exposes: {
         "./Cart": "./src/bootstrap",
