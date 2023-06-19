@@ -1,6 +1,10 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
-const {CONTAINER_DEV_PORT, PRODUCTS_DEV_PORT, CART_DEV_PORT} = require('../utils');
+const {
+  CONTAINER_DEV_PORT,
+  PRODUCTS_DEV_PORT,
+  CART_DEV_PORT,
+} = require("../utils");
 
 module.exports = {
   mode: "development",
@@ -11,8 +15,8 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "container",
       remotes: {
-        productsApp: `products@http://localhost:${PRODUCTS_DEV_PORT}/remoteEntry.js`,
-        cartApp: `cart@http://localhost:${CART_DEV_PORT}/remoteEntry.js`,
+        productsApp: `productsApp@http://localhost:${PRODUCTS_DEV_PORT}/remoteEntry.js`,
+        cartApp: `cartApp@http://localhost:${CART_DEV_PORT}/remoteEntry.js`,
       },
     }),
     new HtmlWebpackPlugin({

@@ -1,7 +1,6 @@
-
 import { faker } from "@faker-js/faker";
 
-function mount(el) {
+export function mount(el) {
   let products = "";
 
   for (let i = 0; i < 6; i++) {
@@ -18,5 +17,3 @@ if (process.env.NODE_ENV == "development") {
     mount(elm);
   }
 }
-
-export { mount };

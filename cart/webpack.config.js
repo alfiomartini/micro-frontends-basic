@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
-const {CART_DEV_PORT} = require('../utils');
+const { CART_DEV_PORT } = require("../utils");
 
 module.exports = {
   mode: "development",
@@ -9,10 +9,10 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "cart",
+      name: "cartApp",
       filename: "remoteEntry.js",
       exposes: {
-        "./CartIndex": "./src/bootstrap",
+        "./Cart": "./src/bootstrap",
       },
       shared: ["@faker-js/faker"],
     }),

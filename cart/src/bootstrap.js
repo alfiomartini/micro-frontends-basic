@@ -2,7 +2,7 @@ import { faker } from "@faker-js/faker";
 
 const cartText = `<div>You have ${faker.random.numeric()} in your Cart</div>`;
 
-function cartMount(elm) {
+export function cart(elm) {
   elm.innerHTML = cartText;
 }
 
@@ -16,5 +16,3 @@ if (process.env.NODE_ENV === "development") {
     console.log("mounting cart message");
   }
 }
-
-export { cartMount };
