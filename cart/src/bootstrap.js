@@ -12,7 +12,7 @@ if (process.env.NODE_ENV === "development") {
   console.log("cart development mode");
   const elm = document.querySelector("#dev-cart");
   if (elm) {
-    cartMount(elm);
+    cart(elm);
     console.log("mounting cart message");
   }
 }
